@@ -1,47 +1,55 @@
-SabreTooth VObject library
-==========================
+sabre/vobject
+=============
 
 The VObject library allows you to easily parse and manipulate [iCalendar](https://tools.ietf.org/html/rfc5545)
 and [vCard](https://tools.ietf.org/html/rfc6350) objects using PHP.
+
 The goal of the VObject library is to create a very complete library, with an easy to use API.
 
-This project is a spin-off from [SabreDAV](http://code.google.com/p/sabredav/), where it has
-been used for several years. The VObject library has 100% unittest coverage.
+
+Installation
+------------
+
+Make sure you have [Composer][1] installed, and then run:
+
+    composer require sabre/vobject "^4.0"
+
+This package requires PHP 5.5. If you need the PHP 5.3/5.4 version of this package instead, use:
+
+
+    composer require sabre/vobject "^3.4"
+
+
+Usage
+-----
+
+* [Working with vCards](http://sabre.io/vobject/vcard/)
+* [Working with iCalendar](http://sabre.io/vobject/icalendar/)
+
+
 
 Build status
 ------------
 
 | branch | status |
 | ------ | ------ |
-| master | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.png?branch=master)](https://travis-ci.org/fruux/sabre-vobject) |
-| 2.1    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.png?branch=2.1)](https://travis-ci.org/fruux/sabre-vobject) |
-| 2.0    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.png?branch=2.0)](https://travis-ci.org/fruux/sabre-vobject) |
+| master | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.svg?branch=master)](https://travis-ci.org/fruux/sabre-vobject) |
+| 3.5    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.svg?branch=3.5)](https://travis-ci.org/fruux/sabre-vobject) |
+| 3.4    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.svg?branch=3.4)](https://travis-ci.org/fruux/sabre-vobject) |
+| 3.1    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.svg?branch=3.1)](https://travis-ci.org/fruux/sabre-vobject) |
+| 2.1    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.svg?branch=2.1)](https://travis-ci.org/fruux/sabre-vobject) |
+| 2.0    | [![Build Status](https://travis-ci.org/fruux/sabre-vobject.svg?branch=2.0)](https://travis-ci.org/fruux/sabre-vobject) |
 
 
-Installation
-------------
 
-VObject requires PHP 5.3, and should be installed using composer.
-The general composer instructions can be found on the [composer website](http://getcomposer.org/doc/00-intro.md composer website).
+Support
+-------
 
-After that, just declare the vobject dependency as follows:
-
-```
-"require" : {
-    "sabre/vobject" : "~3.1"
-}
-```
-
-Then, run `composer.phar update` and you should be good.
-
-Usage
------
-
-* [3.x documentation](doc/usage_3.md)
-* [2.x documentation](doc/usage_2.md)
-* [Migrating from 2.x to 3.x](doc/MigratingFrom2to3.md)
+Head over to the [SabreDAV mailing list](http://groups.google.com/group/sabredav-discuss) for any questions.
 
 Made at fruux
 -------------
 
 This library is being developed by [fruux](https://fruux.com/). Drop us a line for commercial services or enterprise support.
+
+[1]: https://getcomposer.org/
